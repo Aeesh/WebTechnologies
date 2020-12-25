@@ -13,26 +13,32 @@ body{
   color: #3e3e3e;
   width: 100vw;
   height: 100vh;
-  max-height: 100vh;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
+/* CONTAINER STYLING*/
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
+/* HEADER STYLING*/
 .header {
   background: #0b63d4;
   height: 10%;
 }
+/* CONTENT STYLING*/
 .content {
   display: grid;
   grid-template-columns: 1fr 5fr;
   height: 90%;
 }
+/* SIDE-BAR STYLING*/
 .side-bar {
   border-right: 1px solid #3e3e3e;
 }
+/* SIDE-BAR LOGO CONTAINER STYLING */
 .side-bar .logo-con {
   margin: 5px 10px;
   width: 150px;
@@ -44,6 +50,7 @@ body{
   width: 100%;
   height: 100%;
 }
+/* SIDE-BAR LIST STYLING */
 .side-bar ul {
   margin: .5rem 0 0;
 }
@@ -57,12 +64,20 @@ body{
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: #3e3e3e;
   padding: .3rem 1.5rem;
 }
 .side-bar ul li a:hover {
   background: #eee;
   cursor: pointer;
 }
+.side-bar ul li a:active {
+  background: #ccc;
+}
+.active {
+  background: #ccc;
+}
+
 .side-bar ul li a span {
  font-size: .9rem;
 }
@@ -71,6 +86,7 @@ body{
   height: 30px;
   margin: 0 .5rem 0 0;
 }
+/* MAIN CONTENT STYLING */
 .main-content-con {
   text-align: center;
 }
@@ -79,6 +95,7 @@ body{
   width: 80%;
   background: #fff;
 }
+/* MAIN CONTENT IMAGE CONTAINER STYLING*/
 .main-content-con .main-content .img-con {
   margin: 100px 0 0;
 }
@@ -93,6 +110,7 @@ body{
 .main-content-con .main-content #text {
   font-size: .8rem;
 }
+/* BUTTON STYLING */
 .btn {
   background: #0b63d4;
   color: #fff;
@@ -103,4 +121,33 @@ body{
   border-radius: 8px;
   outline: none;
   font-size: 1.2rem;
+  opacity: .9;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+/* DISPLAY STYLING */
+#display {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 10px;
+  width: 100%;
+}
+
+#display .card {
+  background: #eee;
+  margin: 1rem;
+  border-radius: 10px;
+}
+#display h4 {
+  color: #0b63d4;
+  text-transform: uppercase;
+}
+#display .card1, #display h4 {
+ grid-column: 1/4;
+}
+#display .card2 {
+  margin: 1rem;
+  padding: 1rem;
 }

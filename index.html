@@ -34,7 +34,7 @@
             </a>
           </li>         
           <li>
-            <a href="#">
+            <a href="#locations" class="active">
               <img src="./icons/house.png">
               <span>Locations</span>
             </a>
@@ -78,7 +78,7 @@
         </ul>
       </div>
       <!-- MAIN-CONTENT -->
-      <div class="main-content-con">
+      <div class="main-content-con" id="locations">
         <div class="main-content">
           <!-- MAIN CONTENT IMAGE CONTAINER -->
          <div class="img-con">
@@ -89,11 +89,14 @@
             <h5>Add Locations</h5>
             <p id="text">Locations are where you receive visitors</p>
           </div>
-          <button class="btn">Add</button>
+          <button class="btn" id="btn" onclick="result()">Add</button>
+    
+          <div id="display" ></div>
         </div>
       </div>
     </div>
   </div>
   
+ <script src="index.js"></script>
 </body>
 </html>
